@@ -35,7 +35,10 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "starter",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        Design: "Design@http://localhost:9001/remoteEntry.js",
+        Shape: "Shape@http://localhost:9002/remoteEntry.js"
+      },
       exposes: {},
       shared: require("./package.json").dependencies,
     }),

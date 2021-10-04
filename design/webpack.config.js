@@ -33,10 +33,13 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new ModuleFederationPlugin({
-      name: "starter",
+      name: "Design",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./Header": "./src/Header",
+        "./App": "./src/App"
+      },
       shared: require("./package.json").dependencies,
     }),
     new HtmlWebPackPlugin({
