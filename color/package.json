@@ -19,7 +19,7 @@
       "serve": "^12.0.0",
       "vue": "^3.0.11",
       "bootstrap":"5.1.1",
-      "bootstrap-vue":"2.21.2"
+      "@popperjs/core":"2.10.2"
     },
     "devDependencies": {
       "@vue/compiler-sfc": "3.2.6",
